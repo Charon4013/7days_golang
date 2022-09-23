@@ -78,7 +78,7 @@ func (r *router) getRoutes(method string) []*node {
 		return nil
 	}
 	nodes := make([]*node, 0)
-	root.travel(*nodes)
+	root.travel(&nodes)
 	return nodes
 }
 
