@@ -1,3 +1,3 @@
 # 7days_golang
-Learn go through serveral examples from geektutu
+Learn go with a few examples from geektutu
 [Link](https://github.com/geektutu/7days-golang)
