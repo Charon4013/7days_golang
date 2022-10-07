@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// Needed, otherwise protoc will failed.
+// e.g.: protoc-gen-go: unable to determine Go import path for "geecachepb.proto"
+option go_package=".;geecachepb";
+
+package geecachepb;
+
+message Request {
+  string group = 1;
+  string key = 2;
+}
+
+message Response {
+  bytes value = 1;
+}
+
+service GroupCache {
+  rpc Get(Request) returns (Response);
+}
