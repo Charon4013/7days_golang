@@ -112,7 +112,7 @@ func (group *RouterGroup) createStaticHandler(relativePath string, fs http.FileS
 	}
 }
 
-// serve static files
+// Static serves static files
 func (group *RouterGroup) Static(relativePath string, root string) {
 	handler := group.createStaticHandler(relativePath, http.Dir(root))
 	urlPattern := path.Join(relativePath, "/*filepath")
